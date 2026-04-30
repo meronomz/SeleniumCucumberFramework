@@ -35,7 +35,6 @@ public class LoginPageStepDef {
         }
     }
 
-
     @Given("I am on the OpenCart login page")
     public void i_am_on_the_open_cart_login_page() {
         driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
@@ -64,8 +63,6 @@ public class LoginPageStepDef {
     public void i_should_be_logged_in_successfully() {
         Assert.assertEquals(loginPage.checkLogoutLink(), true);
     }
-
-
 
     @Then("I should see an error message indicating {string}")
     public void i_should_see_an_error_message_indicating(String errorMessage) {
